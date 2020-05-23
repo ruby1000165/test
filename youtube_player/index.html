@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>YouTube Player</title>
+        <link rel="stylesheet" href="style.css">    <!--使用style.css的元素-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script> <!--打完後可以將網址丟到網頁上，確認是否正確-->
+        <script src="playlist.js"></script>   <!--playlist.js要在main.js之前-->
+        <script src="main.js"></script>  
+    </head>
+    <body>
+        <h1>YouTube 心情點唱機</h1>
+        <h2></h2>  <!--歌曲名稱預計放在這裡-->
+        <div id="player"></div> <!--youtube影片播放器放這裡-->
+        <br>
+        <input id="playButton" type="button" value="Play"> 
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    </body> 
+</html>
